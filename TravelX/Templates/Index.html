@@ -1,3 +1,5 @@
+{% load static from staticfiles %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +8,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="..\.\materialize.min.css">
+     <link rel="stylesheet" href="{% static 'materialize.min.css' %}">
     <title>Railway</title>
     <!--Top backgroungd image style-->
     <style>
@@ -24,7 +26,7 @@
   <div class="navbar-fixed">
   <nav class="nav-wraper z-depth-5">
     <div class="container">
-    <a href="#" class="brand-logo">*Title*</a>
+    <a href="#" class="brand-logo">TravelX</a>
     <a href="#" class="sidenav-trigger btn-floating btn-large waves-effect waves-light transparent z-depth-0" data-target="mobile-links">
       <i class="large material-icons">menu</i>
     </a>   
@@ -56,14 +58,14 @@
   </header>
   <div class="parallax-container" style="margin-top: -100px">
       <div class="parallax">
-<img src="Images/bgf.jpg" alt=""></div></div>
+<img src="{% static 'Index_bgf.jpg' %}" alt=""></div></div>
   <!--END OF NAVBAR-->
 
   <!--PHOTO SECTION-->
   <section class="container section" id="photosection">   
   <div class="row">
     <div class="col s12 l4">
-      <img src="Images/interior-2.jpg" class="responsive-img z-depth-4" alt="">
+      <img src="static/Index_interior-2.jpg" class="responsive-img z-depth-4" alt="">
     </div>
     <div class="col s12 l7 offset-l1">
       <h4 class="indigo-text text-darken-4">Best in-class features</h4>
@@ -77,7 +79,7 @@
   </div>
   <div class="row">
     <div class="col s12 l4 push-l7">
-      <img src="Images/payment.png" class="responsive-img  z-depth-4" alt="">
+      <img src="/static/Index_payment.png" class="responsive-img  z-depth-4" alt="">
     </div>
     <div class="col s12 l6 pull-l4 right-align">
       <h4 class="indigo-text text-darken-4">Easy Payment Options</h4>
@@ -119,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="parallax"><img src="Images/parallax bg.jpg" alt="Unsplashed background img 2"></div>
+      <div class="parallax"><img src="/static/Index_parallax bg.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
 
@@ -128,9 +130,9 @@
 
 
 
-  <script src="..\.\jquery.js"></script>
+  <script src="{% static 'jquery.js' %}"></script>
   <!-- Compiled and minified JavaScript -->
-  <script src="..\.\materialize.min.js"></script>
+  <script src="{% static 'materialize.min.js' %}"></script>
 
   <script>
     $(document).ready(function(){
