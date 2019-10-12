@@ -21,7 +21,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path(r'admin/', admin.site.urls),
-    path('',views.home),
+    path(r'home',views.home),
+    path(r'<slug:slug>/',views.test),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()

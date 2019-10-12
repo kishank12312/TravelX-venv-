@@ -2,22 +2,24 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="{% static 'materialize.min.css' %}">
-    <title>Railway</title>
-    <!--Top backgroungd image style-->
-    <style>
-
-      .top{
-      background: rgba(255, 255, 255,0.5);
-      }
-          
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="{% static 'css/material-icons.css' %}" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="{% static 'materialize.min.css' %}">
+  <title>Railway</title>
+  <!--Top backgroungd image style-->
+  <style>
+    .top{
+    background: rgba(255, 255, 255,0.5);
+    }
+    .navbar-material .nav-wrapper .brand-logo img {
+    height: 64px;
+    }
+        
+  </style>
 </head>
 <body>
   <header>
@@ -26,7 +28,7 @@
   <div class="navbar-fixed">
   <nav class="nav-wraper z-depth-5">
     <div class="container">
-    <a href="#" class="brand-logo">TravelX</a>
+    <a href="#" class="brand-logo"><i class="material-icons large">train</i>TravelX</a>
     <a href="#" class="sidenav-trigger btn-floating btn-large waves-effect waves-light transparent z-depth-0" data-target="mobile-links">
       <i class="large material-icons">menu</i>
     </a>   
@@ -34,7 +36,6 @@
       <li><a href="#" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">home</i>HOME</a></li>
       <li><a href="#" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">train</i>TRAINS</a></li>
       <li><a href="..\.\Book\Booking.html" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">language</i>BOOKING</a></li>
-      <li><a href="#" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">perm_media</i>GALLERY</a></li>
       <li><a href="..\.\Login\login.html" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">account_circle</i>LOGIN</a></li>
     </ul>
   </div>
@@ -52,25 +53,24 @@
     <li><a href="#" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">HOME</a></li>
     <li><a href="#" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">TRAINS</a></li>
     <li><a href="..\.\Book\Booking.html" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">BOOK</a></li>
-    <li><a href="#" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">GALLERY</a></li>
     <li><a href="..\.\Login\login.html" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">LOGIN</a></li>
   </ul>
   </header>
   <div class="parallax-container" style="margin-top: -100px">
       <div class="parallax">
-<img src="{% static 'Index_bgf.jpg' %}" alt=""></div></div>
+<img src="{% static 'Images/Index_bgf.jpg' %}" alt=""></div></div>
   <!--END OF NAVBAR-->
 
   <!--PHOTO SECTION-->
   <section class="container section" id="photosection">   
   <div class="row">
     <div class="col s12 l4">
-      <img src="static/Index_interior-2.jpg" class="responsive-img z-depth-4" alt="">
+      <img src="static/Images/Index_interior-2.jpg" class="responsive-img z-depth-4" alt="">
     </div>
     <div class="col s12 l7 offset-l1">
       <h4 class="indigo-text text-darken-4">Best in-class features</h4>
       <i class="material-icons medium center-align indigo-text text-darken-4">wifi<h6 class="center-align" style="font-family: Arial; font-size: 15px">WIFI</h6></i>
-      <i class="material-icons medium center-align indigo-text text-darken-4">fastfood<h6 class="center-align" style="font-family: Arial; font-size: 15px">FOOD</h6></i>
+      <!--<i class="material-icons medium center-align indigo-text text-darken-4">fastfood<h6 class="center-align" style="font-family: Arial; font-size: 15px">FOOD</h6></i>-->
       <i class="material-icons medium center-align indigo-text text-darken-4">accessible<h6 class="center-align" style="font-family: Arial; font-size: 15px">ACCESIBILITY</h6></i>
       <i class="material-icons medium center-align indigo-text text-darken-4">airline_seat_recline_extra<h6 class="center-align" style="font-family: Arial; font-size: 15px">COMFORT</h6></i>
       <i class="material-icons medium center-align indigo-text text-darken-4">attach_money<h6 class="center-align" style="font-family: Arial; font-size: 15px">VALUE</h6></i>
@@ -79,7 +79,7 @@
   </div>
   <div class="row">
     <div class="col s12 l4 push-l7">
-      <img src="/static/Index_payment.png" class="responsive-img  z-depth-4" alt="">
+      <img src="/static/Images/Index_payment.png" class="responsive-img  z-depth-4" alt="">
     </div>
     <div class="col s12 l6 pull-l4 right-align">
       <h4 class="indigo-text text-darken-4">Easy Payment Options</h4>
@@ -121,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="parallax"><img src="/static/Index_parallax bg.jpg" alt="Unsplashed background img 2"></div>
+      <div class="parallax"><img src="/static/Images/Index_parallax bg.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
 
@@ -130,9 +130,9 @@
 
 
 
-  <script src="{% static 'jquery.js' %}"></script>
+  <script src="{% static 'JS/jquery.js' %}"></script>
   <!-- Compiled and minified JavaScript -->
-  <script src="{% static 'materialize.min.js' %}"></script>
+  <script src="{% static 'JS/materialize.min.js' %}"></script>
 
   <script>
     $(document).ready(function(){
