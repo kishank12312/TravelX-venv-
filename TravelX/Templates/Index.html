@@ -35,7 +35,7 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="#" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">home</i>HOME</a></li>
       <li><a href="#" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">train</i>TRAINS</a></li>
-      <li><a href="..\.\Book\Booking.html" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">language</i>BOOKING</a></li>
+      <li><a href="{% url 'capture' slug='Booking' %}" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">language</i>BOOKING</a></li>
       <li><a href="..\.\Login\login.html" class="hoverable waves-effect waves-light" style="font-weight: lighter; font-size: 120%"><i class="material-icons left">account_circle</i>LOGIN</a></li>
     </ul>
   </div>
@@ -52,7 +52,7 @@
   <ul class="sidenav grey darken-4" id="mobile-links">
     <li><a href="#" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">HOME</a></li>
     <li><a href="#" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">TRAINS</a></li>
-    <li><a href="..\.\Book\Booking.html" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">BOOK</a></li>
+    <li><a href="{% url 'capture' slug='Booking' %}" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">BOOK</a></li>
     <li><a href="..\.\Login\login.html" class="hoverable white-text waves-effect waves-light" style="font-weight: lighter; font-size: 120%">LOGIN</a></li>
   </ul>
   </header>
@@ -117,7 +117,7 @@
           <div class="col s6 l2 push-l2">
             <div class="center-align"><i class="material-icons large white-text">phone</i></div>
             <h4 class="white-text center-align" style="font-weight: lighter; font-size: 250%">Booking Options</h4>
-            <p class="white-text center-align" style="font-size: 150%; font-weight: lighter">Head over to the Booking tab for:<br style="height:10px;"><br>Booking tickets<br>Reservations<br>Ticket status<br>Cancel Tickets</p>
+            <p class="white-text center-align" style="font-size: 150%; font-weight: lighter">Head over to the Booking tab for:<br><br>Booking tickets<br>Reservations<br>Ticket status<br>Cancel Tickets</p>
           </div>
         </div>
       </div>
