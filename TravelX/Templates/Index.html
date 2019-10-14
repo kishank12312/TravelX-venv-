@@ -18,6 +18,10 @@
     .navbar-material .nav-wrapper .brand-logo img {
     height: 64px;
     }
+    .section{
+      background-color: rgb(41, 43, 43);
+    }
+
         
   </style>
 </head>
@@ -62,28 +66,28 @@
   <!--END OF NAVBAR-->
 
   <!--PHOTO SECTION-->
-  <section class="container section" id="photosection">   
+  <section class="section" id="photosection">   
   <div class="row">
     <div class="col s12 l4">
       <img src="static/Images/Index_interior-2.jpg" class="responsive-img z-depth-4" alt="">
     </div>
     <div class="col s12 l7 offset-l1">
-      <h4 class="indigo-text text-darken-4">Best in-class features</h4>
-      <i class="material-icons medium center-align indigo-text text-darken-4">wifi<h6 class="center-align" style="font-family: Arial; font-size: 15px">WIFI</h6></i>
+      <h4 class="white-text text-darken-4">Best in-class features</h4>
+      <i class="material-icons medium center-align white-text text-darken-4">wifi<h6 class="center-align" style="font-family: Arial; font-size: 15px">WIFI</h6></i>
       <!--<i class="material-icons medium center-align indigo-text text-darken-4">fastfood<h6 class="center-align" style="font-family: Arial; font-size: 15px">FOOD</h6></i>-->
-      <i class="material-icons medium center-align indigo-text text-darken-4">accessible<h6 class="center-align" style="font-family: Arial; font-size: 15px">ACCESIBILITY</h6></i>
-      <i class="material-icons medium center-align indigo-text text-darken-4">airline_seat_recline_extra<h6 class="center-align" style="font-family: Arial; font-size: 15px">COMFORT</h6></i>
-      <i class="material-icons medium center-align indigo-text text-darken-4">attach_money<h6 class="center-align" style="font-family: Arial; font-size: 15px">VALUE</h6></i>
+      <i class="material-icons medium center-align white-text text-darken-4">accessible<h6 class="center-align" style="font-family: Arial; font-size: 15px">ACCESIBILITY</h6></i>
+      <i class="material-icons medium center-align white-text text-darken-4">airline_seat_recline_extra<h6 class="center-align" style="font-family: Arial; font-size: 15px">COMFORT</h6></i>
+      <i class="material-icons medium center-align white-text text-darken-4">attach_money<h6 class="center-align" style="font-family: Arial; font-size: 15px">VALUE</h6></i>
       </div>
     </div>
   </div>
-  <div class="row">
+  <!--<div class="row">
     <div class="col s12 l4 push-l7">
       <img src="/static/Images/Index_payment.png" class="responsive-img  z-depth-4" alt="">
     </div>
     <div class="col s12 l6 pull-l4 right-align">
-      <h4 class="indigo-text text-darken-4">Easy Payment Options</h4>
-      <p class="right-align indigo-text text-darken-4">We Support all the following modes of payment:<br>
+      <h4 class="white-text text-darken-4">Easy Payment Options</h4>
+      <p class="right-align white-text text-darken-4">We Support all the following modes of payment:<br>
         Credit card<br>
         Debit card<br>
         Internet banking<br>
@@ -91,13 +95,13 @@
 
       </p>
     </div>
-  </div>
+  </div>-->
   
   </section>
   <!--END OF PHOTOSECTION-->
   <!--PARALLAX-->
   <div class="parallax-container ">
-      <div class="section no-pad-bot">
+      <div class="no-pad-bot">
         <div class="row">
           <div class="col s6 l2 push-l2">
               <div class="center-align"><i class="material-icons large white-text">people</i></div>
@@ -139,12 +143,16 @@
       $('.sidenav').sidenav();
     })
     $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 400) { // check if user scrolled more than 50 from top of the browser window
-          $("nav").css("background", "rgba(74, 20, 140, 0.9)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-        } else {
-          $("nav").css("background", "rgba(255,255,255,0.1)"); // if not, change it back to transparent
-        }
-        $('.parallax').parallax();
+      if ($(document).scrollTop() > 400) { // check if user scrolled more than 50 from top of the browser window
+        $("nav").css("background", "rgba(255, 255, 255,0.9)");
+        $(".hoverable").css("color", "rgba(0,0,0)");
+        $(".brand-logo").css("color", "rgba(0,0,0)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+      } else {
+        $("nav").css("background", "rgba(255,255,255,0.1)");
+        $(".hoverable").css("color", "rgba(255,255,255)");
+        $(".brand-logo").css("color", "rgba(255,255,255)"); // if not, change it back to transparent
+      } 
+    $('.parallax').parallax();
       });
   </script>
 </body>
